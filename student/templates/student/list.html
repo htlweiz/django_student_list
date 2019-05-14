@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Student list</title>
+    </head>
+    <body>
+        <h1>Student list</h1>
+        <ul class="studentList">
+          {% for student in students %}
+          <li class="student"><a href="{{ student.id }}">{{ student.first_name}} {{ student.sure_name }}</a> <a href="{{ student.id }}/delete">X</a></li>
+          {% endfor %}
+        </ul>
+        <a href="create">create</a>
+    </body>
+</html>

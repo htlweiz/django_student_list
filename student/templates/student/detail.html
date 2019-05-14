@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            {{ student }}
+        </title>
+    </head>
+    <body>
+        <h1> {{ student.sure_name }} {{ student.first_name }} </h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="OK"/>
+        </form>
+    </body>
+</html>
