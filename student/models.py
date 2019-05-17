@@ -11,4 +11,4 @@ class Student(models.Model):
 
     def __str__(self):
         """ defines the pretty print of this class used eg. in admin area """
-        return "%s %s : %s" % (self.first_name, self.sure_name, self.birth_date)
+        return "Student: %s %s : %s" % (self.sure_name, self.first_name, self.birth_date)
